@@ -28,6 +28,12 @@
   }
 }
 
+.add-post__form-actions {
+  display: flex;
+  justify-content: space-between;
+  width: 19%;
+}
+
 .add-post__file,
 .add-post__send {
   display: block;
@@ -58,8 +64,4 @@
   }
 }
 
-.add-post__form-actions {
-  display: flex;
-  justify-content: space-between;
-  width: 19%;
-}
+

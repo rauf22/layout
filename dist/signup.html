@@ -14,7 +14,7 @@
     
     <title>Hello</title>
   </head>
-  <body>
+  <body class="no-scroll">
     <div class="page">
       <!-- Header -->
       <header class="header">
@@ -33,8 +33,12 @@
                   <li><a class="subnav__link" href="#">Продвижение видео</a></li>
                 </ul>
               </li>
-              <li class="nav__item"><a class="nav__link" href="#">Обо мне</a></li>
-              <li class="nav__item"><a class="nav__link" href="#">Реклама</a></li>
+              <li class="nav__item">
+                <a class="nav__link" href="text.html">Обо мне</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="text.html">Реклама</a>
+              </li>
             </ul>
           </nav>
         </div>
@@ -42,12 +46,14 @@
         <div class="header__right">
           <nav class="nav">
             <ul class="nav__list">
-              <li class="nav__item"><a class="nav__link" href="#">Профиль</a></li>
+              <li class="nav__item">
+                <a class="nav__link" href="profile.html">Профиль</a>
+              </li>
               <li class="nav__item"><a class="nav__link" href="#">Выйти</a></li>
             </ul>
           </nav>
       
-          <form class="search" action="/" method="post">
+          <form class="search" action="search.html" method="get">
             <input class="search__input" type="text" placeholder="Поиск по блогу" />
           </form>
         </div>
@@ -93,7 +99,7 @@
         </div>
         <!-- sitebar__content -->
         <div class="sitebar__footer">
-          <a class="btn btn--red" href="">Мои работы</a>
+          <a class="btn btn--red" href="works.html">Мои работы</a>
           <button class="btn btn--blue" type="button">Написать мне</button>
         </div>
       </aside>
@@ -101,18 +107,53 @@
       <!-- Main -->
       <main class="main">
         <div class="container">
-<a href="" class="wave-btn">
-  <span class="wave-btn__text"></span>
-  <div class="wave-btn__waves"></div>
-</a>
-<h1>Hello</h1>
+<h1 class="page__title page__title--center">Регистрация</h1>
 
-  
+<form action="/" class="form form--auth" method="post">
+  <div class="form__group form__group--md">
+    <input class="form__control" type="text" placeholder="Ваш имя" />
+    <span class="form__line"></span>
+  </div>
 
+  <div class="form__group form__group--md">
+    <input class="form__control" type="email" placeholder="Ваш e-mail" />
+    <span class="form__line"></span>
+  </div>
+
+  <div class="form__group form__group--md">
+    <input class="form__control" type="password" placeholder="Введите пароль" />
+    <span class="form__line"></span>
+  </div>
+
+  <div class="form__group form__group--md">
+    <input
+      class="form__control"
+      type="password"
+      placeholder="Подтвердите пароль"
+    />
+    <span class="form__line"></span>
+  </div>
+
+  <div class="form__footer form__footer--center">
+    <div class="form__group form__group--md">
+      <button type="submit" class="btn btn--blue btn--rounded btn--sm" href="#">
+        Зарегистрироваться
+      </button>
+    </div>
+
+    <ul class="form__footer-list">
+      <li><a href="signin.html">Войти</a></li>
+      <li><a href="reset.html">Востановить</a></li>
+    </ul>
+  </div>
+</form>
 </div>
       </main>
     </div>
 
+    <div class="modal">
+      <video class="modal_video" src="" poster="https://placehold.it/420x580"></video>
+    </div>
     <!-- JS -->
     <script src="assets/js/app.js"></script>
   </body>

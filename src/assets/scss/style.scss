@@ -1,4 +1,5 @@
 @import 'vars';
+@import 'mixin';
 @import 'vendor/reset';
 
 html {
@@ -15,7 +16,8 @@ body {
   color: $white;
   line-height: 1.5;
 
-  &.no-scroll {
+  &.no-scroll,
+  &.show-sidebar {
     overflow: hidden;
   }
 }
@@ -37,6 +39,7 @@ a {
 /* Blocks */
 @import 'blocks/page';
 @import 'blocks/header';
+@import 'blocks/burger';
 @import 'blocks/nav';
 @import 'blocks/subnav';
 @import 'blocks/search';

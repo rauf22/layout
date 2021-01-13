@@ -2,10 +2,10 @@
 layout: default
 title: Home
 ---
-
+<!-- <div class="rauf">Проверка адаптивного свойства</div> -->
 <!-- / Stories -->
 <div class="stories">
-  <div class="stories__item">
+  <div class="stories__item" data-modal="story-modal">
     <img class="stories__preview" src="assets/images/stories1.jpg" alt="" />
     <div class="stories_title">Отдыхаю на природе</div>
     <time class="stories__date" datetime="2020-09-21 19:21">21.09.2020</time>
@@ -35,6 +35,7 @@ title: Home
       class="add-post__textarea"
       name="post-text"
       placeholder="Напишите что-нибудь"
+      data-autoresize
     ></textarea>
 
     <div class="add-post__form-actions">

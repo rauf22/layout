@@ -13,7 +13,7 @@
 
 .add-post__form {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .add-post__textarea {
@@ -22,7 +22,7 @@
   font-size: 1.5rem;
   color: $white;
   width: 81%;
-  height: 26px;
+  height: 35px;
   overflow: hidden;
 
   border: none;
